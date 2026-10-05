@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AgroCrew | Qué sembrar en tu terreno</title>
-  <meta name="description" content="AgroCrew te recomienda qué cultivos son compatibles con tu terreno usando datos oficiales de suelos, riesgo hídrico y clima.">
+  <title>AgroCrew</title>
+  <meta name="description" content="AgroCrew te recomienda qué cultivos son compatibles con tu terreno usando datos oficiales e inteligencia artificial.">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -14,12 +14,14 @@
       <a class="marca" href="#inicio">
         <img src="img/favicon.svg" alt="" width="28" height="28"> AgroCrew
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">☰</button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Menú">☰</button>
       <ul class="nav-links" id="menu">
-        <li><a href="#funcionalidades">Funcionalidades</a></li>
-        <li><a href="#para-quien">Para quién es</a></li>
-        <li><a href="#equipo">Equipo</a></li>
-        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#funcionalidades" data-i18n="nav.funcionalidades">Funcionalidades</a></li>
+        <li><a href="#para-quien" data-i18n="nav.paraQuien">Para quién es</a></li>
+        <li><a href="#impacto" data-i18n="nav.impacto">Impacto</a></li>
+        <li><a href="#equipo" data-i18n="nav.equipo">Equipo</a></li>
+        <li><a href="#proyecto" data-i18n="nav.proyecto">Proyecto</a></li>
+        <li><button class="idioma" type="button" data-cambiar-idioma>EN</button></li>
       </ul>
     </nav>
   </header>
@@ -27,31 +29,31 @@
   <main>
     <section class="hero" id="inicio">
       <div class="contenedor">
-        <h1>Descubre qué cultivos son compatibles con tu terreno</h1>
-        <p>AgroCrew cruza datos oficiales de suelos (MIDAGRI), riesgo de inundación (ANA) y clima (Open-Meteo) para recomendarte qué sembrar y explicarte por qué.</p>
-        <a class="boton" href="#funcionalidades">Ver funcionalidades</a>
+        <h1 data-i18n="hero.titulo">Descubre qué cultivos son compatibles con tu terreno</h1>
+        <p data-i18n="hero.texto">AgroCrew cruza datos oficiales de suelos (MIDAGRI), riesgo de inundación (ANA) y clima (Open-Meteo), y con inteligencia artificial te explica qué sembrar y por qué.</p>
+        <a class="boton" href="#funcionalidades" data-i18n="hero.boton">Ver funcionalidades</a>
       </div>
     </section>
 
     <section class="seccion" id="funcionalidades">
       <div class="contenedor">
-        <h2>Funcionalidades</h2>
+        <h2 data-i18n="func.titulo">Funcionalidades</h2>
         <div class="grilla">
           <div class="item">
-            <h3>Registra tu terreno</h3>
-            <p>Ubica tu predio por departamento, provincia y distrito, e indica si tienes riego.</p>
+            <h3 data-i18n="func.1.t">Registra tu terreno</h3>
+            <p data-i18n="func.1.d">Ubica tu predio por departamento, provincia y distrito, e indica si tienes riego.</p>
           </div>
           <div class="item">
-            <h3>Conoce tu suelo</h3>
-            <p>Te mostramos la clasificación oficial de tu tierra explicada en palabras sencillas.</p>
+            <h3 data-i18n="func.2.t">Conoce tu suelo</h3>
+            <p data-i18n="func.2.d">Te mostramos la clasificación oficial de tu tierra explicada en palabras sencillas.</p>
           </div>
           <div class="item">
-            <h3>Recibe alertas de riesgo</h3>
-            <p>Te avisamos si tu predio está cerca de una zona de inundación o si se esperan lluvias intensas.</p>
+            <h3 data-i18n="func.3.t">Recibe alertas de riesgo</h3>
+            <p data-i18n="func.3.d">Te avisamos si tu predio está cerca de una zona de inundación o si se esperan lluvias intensas.</p>
           </div>
           <div class="item">
-            <h3>Obtén tu ranking de cultivos</h3>
-            <p>Una lista de cultivos compatibles con su puntaje y los factores que influyen en cada uno.</p>
+            <h3 data-i18n="func.4.t">Ranking de cultivos explicado con IA</h3>
+            <p data-i18n="func.4.d">Una lista de cultivos compatibles con su puntaje, y una explicación clara redactada por inteligencia artificial.</p>
           </div>
         </div>
       </div>
@@ -59,28 +61,44 @@
 
     <section class="seccion seccion-alterna" id="para-quien">
       <div class="contenedor">
-        <h2>Para quién es</h2>
+        <h2 data-i18n="seg.titulo">Para quién es</h2>
         <div class="grilla grilla-3">
           <div class="item">
-            <h3>Pequeños productores</h3>
-            <p>Que quieren decidir qué sembrar con más información.</p>
+            <h3 data-i18n="seg.1.t">Pequeños productores</h3>
+            <p data-i18n="seg.1.d">Que quieren decidir qué sembrar con más información.</p>
           </div>
           <div class="item">
-            <h3>Productores en zonas de riesgo</h3>
-            <p>Que necesitan saber si su terreno está expuesto a inundaciones.</p>
+            <h3 data-i18n="seg.2.t">Productores en zonas de riesgo</h3>
+            <p data-i18n="seg.2.d">Que necesitan saber si su terreno está expuesto a inundaciones.</p>
           </div>
           <div class="item">
-            <h3>Asesores y gobiernos locales</h3>
-            <p>Que requieren reportes por zona para planificar la asistencia técnica.</p>
+            <h3 data-i18n="seg.3.t">Asesores y gobiernos locales</h3>
+            <p data-i18n="seg.3.d">Que requieren reportes por zona para planificar la asistencia técnica.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="seccion" id="equipo">
+    <section class="seccion" id="impacto">
       <div class="contenedor">
-        <h2>Equipo</h2>
-        <p>Estudiantes de Ingeniería de Sistemas de Información de la UPC.</p>
+        <h2 data-i18n="imp.titulo">Impacto</h2>
+        <div class="grilla">
+          <div class="item">
+            <h3 data-i18n="imp.ods.t">ODS 2: Hambre cero (meta 2.4)</h3>
+            <p data-i18n="imp.ods.d">Contribuimos a sistemas de producción de alimentos sostenibles y resilientes: el productor elige cultivos adecuados a su suelo y clima, y se anticipa a inundaciones que pueden destruir su cosecha.</p>
+          </div>
+          <div class="item">
+            <h3 data-i18n="imp.amb.t">Beneficio ambiental</h3>
+            <p data-i18n="imp.amb.d">Usar cada terreno según su capacidad reduce la erosión y la degradación del suelo, y evitar siembras en zonas de riesgo o con poca agua reduce el desperdicio de agua, semillas y fertilizantes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion-alterna" id="equipo">
+      <div class="contenedor">
+        <h2 data-i18n="eq.titulo">Equipo</h2>
+        <p data-i18n="eq.texto">Estudiantes de Ingeniería de Sistemas de Información de la UPC.</p>
         <ul class="equipo">
           <li>Adrian Estrada Ochoa</li>
           <li>Axel Yerico De La Cruz Huamán</li>
@@ -92,13 +110,13 @@
       </div>
     </section>
 
-    <section class="seccion seccion-alterna" id="proyecto">
+    <section class="seccion" id="proyecto">
       <div class="contenedor">
-        <h2>Conoce el proyecto</h2>
-        <p>Revisa la documentación de nuestra API desplegada en AWS o el código fuente en GitHub.</p>
+        <h2 data-i18n="pro.titulo">Conoce el proyecto</h2>
+        <p data-i18n="pro.texto">Revisa la documentación de nuestra API desplegada en AWS o el código fuente en GitHub.</p>
         <div class="acciones">
-          <a class="boton" href="http://agrocrew-backend.us-east-1.elasticbeanstalk.com/swagger-ui.html" target="_blank" rel="noopener">Ver la API</a>
-          <a class="boton boton-secundario" href="https://github.com/jorize04/Agrocrew-backend" target="_blank" rel="noopener">Ver el código</a>
+          <a class="boton" href="http://agrocrew-backend.us-east-1.elasticbeanstalk.com/swagger-ui.html" target="_blank" rel="noopener" data-i18n="pro.api">Ver la API</a>
+          <a class="boton boton-secundario" href="https://github.com/jorize04/Agrocrew-backend" target="_blank" rel="noopener" data-i18n="pro.codigo">Ver el código</a>
         </div>
       </div>
     </section>
@@ -106,11 +124,13 @@
 
   <footer class="pie">
     <div class="contenedor">
-      <p class="aviso">Las recomendaciones son referenciales y no reemplazan la evaluación de un ingeniero agrónomo.</p>
+      <p><a href="terminos.html" data-i18n="pie.terminos">Términos y condiciones</a></p>
+      <p class="aviso" data-i18n="pie.aviso">Las recomendaciones son referenciales y no reemplazan la evaluación de un ingeniero agrónomo.</p>
       <p class="aviso">© 2026 AgroCrew · Arquitectura de Aplicaciones Web · UPC</p>
     </div>
   </footer>
 
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

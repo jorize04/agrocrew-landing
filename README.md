@@ -12,8 +12,10 @@ HTML5, CSS3 (responsive, sin frameworks) y JavaScript, sin frameworks.
 
 ```
 index.html        Página principal
+terminos.html     Términos y condiciones
 css/styles.css    Estilos y diseño responsive
 js/main.js        Menú para celular
+js/i18n.js        Traducciones español (es) e inglés (en_US)
 img/favicon.svg   Logo
 ```
 
